@@ -1,6 +1,6 @@
 {
   "name": "raphe-server",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Raphe server",
   "main": "index.js",
   "keywords": [
@@ -18,6 +18,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.3",
-    "raphe": "0.0.1"
+    "raphe": "0.0.1",
+    "yargs": "^12.0.1"
   }
 }

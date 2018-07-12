@@ -1,10 +1,12 @@
 #!/usr/bin/env node
 
+const argv = require('yargs').argv;
+
 const express = require("express");
 const bodyParser = require("body-parser");
 
 const { RecordingRepository } = require("raphe");
-const recordingRepository = new RecordingRepository(process.argv[2]);
+const recordingRepository = new RecordingRepository(argv._[0]);
 
 const app = express();
 app.use(bodyParser.json());
@@ -28,4 +30,6 @@ app.post("/recordings", (req, res) => {
   res.status(201).send();
 });
 
-app.listen(3000, () => console.log("Example app listening on port 3000!"));
+const port = argv.port || 3000;
+
+app.listen(port, () => console.log(`Raphe is running on port ${port}!`));
