@@ -1,6 +1,6 @@
 {
   "name": "raphe-server",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "Raphe server",
   "main": "index.js",
   "keywords": [
@@ -19,7 +19,7 @@
   "dependencies": {
     "cors": "^2.8.4",
     "express": "^4.16.3",
-    "raphe": "0.0.1",
+    "raphe": "0.0.2",
     "yargs": "^12.0.1"
   }
 }
